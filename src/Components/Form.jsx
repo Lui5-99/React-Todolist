@@ -44,21 +44,21 @@ const Form = ({ addTask }) => {
       <Row>
         <Col md="12">
           <Row>
-            <Col md="3">
+            <Col md="3" className="">
               <Input
                 placeholder="Tarea"
                 value={titulo}
                 onChange={(e) => setTitulo(e.target.value)}
               />
             </Col>
-            <Col md="3">
+            <Col md="3" className="mt-3 md:mt-0">
               <Input
                 placeholder="Descripcion"
                 value={descripcion}
                 onChange={(e) => setDescripcion(e.target.value)}
               />
             </Col>
-            <Col md="3">
+            <Col md="3" className="mt-3 md:mt-0">
               <select
                 className="bg-white w-full h-full rounded text-center"
                 onChange={(e) => setStatus(Number(e.target.value))}
@@ -70,8 +70,8 @@ const Form = ({ addTask }) => {
                 <option value={3}>Tarea finalizada</option>
               </select>
             </Col>
-            <Col md="3">
-              <div className="w-full flex justify-start">
+            <Col md="3" className="mt-3 md:mt-0">
+              <div className="w-full flex justify-center md:justify-start">
                 <Button color="outline-success" onClick={handleSubmit}>
                   Agregar
                 </Button>
