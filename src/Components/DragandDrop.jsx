@@ -1,3 +1,4 @@
+import Logo from "../assets/react.svg";
 import "../Styles/Drag_and_Drop.css";
 
 const DragandDrop = ({ tasks, setTasks }) => {
@@ -33,7 +34,7 @@ const DragandDrop = ({ tasks, setTasks }) => {
     <>
       <div className="flex justify-center items-center gap-x-4">
         <h1 className="text-white">Drag & Drop</h1>
-        <img className="logo" src="src/assets/react.svg" alt="" />
+        <img className="logo" src={Logo} alt="" />
       </div>
       <br />
       <div className="drag-and-drop">
