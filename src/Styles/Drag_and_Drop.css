@@ -71,6 +71,7 @@
   flex-direction: column;
   grid-gap: 16px;
   height: 100%;
+  min-height: 100px;
 }
 
 .dd-element {
