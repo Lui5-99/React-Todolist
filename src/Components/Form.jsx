@@ -44,7 +44,7 @@ const Form = ({ addTask }) => {
       <Row>
         <Col md="12">
           <Row>
-            <Col md="3" className="">
+            <Col md="3" className="mt-3 md:mt-0">
               <Input
                 placeholder="Tarea"
                 value={titulo}
